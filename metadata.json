@@ -1,0 +1,6 @@
+{
+  "name": "Google Photos",
+  "description": "Pixel-perfect Google Photos mobile web experience backed by OpenStack Swift cloud storage with memory reels, timeline scrubbing, high-performance media player, and fluid transitions.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

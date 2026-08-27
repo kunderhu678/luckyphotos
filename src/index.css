@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --google-blue: #1a73e8;
+  --google-red: #ea4335;
+  --google-yellow: #fbbc04;
+  --google-green: #34a853;
+  --google-surface: #ffffff;
+  --google-text: #3c4043;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .pb-safe {
+    padding-bottom: calc(var(--safe-bottom) + 1rem);
+  }
+  .pt-safe {
+    padding-top: calc(var(--safe-top) + 0.75rem);
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Google Sans", "Roboto", "Segoe UI", sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Disable blue highlight on tap */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
